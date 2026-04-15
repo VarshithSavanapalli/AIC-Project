@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | EVERSTORE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">EVER<span>STORE</span></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html" class="active">Products</a>
+                <a href="cart.html">Cart</a>
+                <a href="account.html">Account</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-icons">
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-header fade-in">
+        <div class="container">
+            <h1>Our Collection</h1>
+            <p style="color: var(--color-gray); margin-top: 1rem;">Discover timeless pieces curated for modern style.
+            </p>
+        </div>
+    </div>
+
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <!-- Filter Bar -->
+            <div class="filter-bar fade-in">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="shoes">Shoes</button>
+                <button class="filter-btn" data-filter="clothing">Clothing</button>
+                <button class="filter-btn" data-filter="watches">Watches</button>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="products-grid fade-in">
+                <!-- Shoe 1 -->
+                <div class="product-card" data-category="shoes" data-id="p1">
+                    <div class="product-img-wrapper">
+                        <img src="https://assets-jiocdn.ajio.com/medias/sys_master/root1/20251225/BBIE/694d4c87cbfa0d56082ceb7d/-473Wx593H-702674764-black-MODEL.jpg"
+                            alt="Classic Leather Oxford">
+                        <div class="quick-view">Quick View</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Shoes</div>
+                        <h4 class="product-name">Classic Leather Oxford</h4>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="product-price">$129.99</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Shoe 2 -->
+                <div class="product-card" data-category="shoes" data-id="p2">
+                    <div class="product-img-wrapper">
+                        <img src="https://assets-jiocdn.ajio.com/medias/sys_master/root1/20250716/N2B7/6877a3d45d4cb4138017b0b8/-473Wx593H-701475361-white-MODEL.jpg"
+                            alt="Minimalist Sneakers">
+                        <div class="quick-view">Quick View</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Shoes</div>
+                        <h4 class="product-name">Minimalist White Sneakers</h4>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="product-price">$89.00</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Shoe 3 -->
+                <div class="product-card" data-category="shoes" data-id="p3">
+                    <div class="product-img-wrapper">
+                        <img src="https://assets-jiocdn.ajio.com/medias/sys_master/root1/20251029/FZN8/6902493ea470c5082f53c02e/-473Wx593H-702439197-brown-MODEL.jpg
+" alt="Suede Chelsea Boots">
+                        <div class="quick-view">Quick View</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Shoes</div>
+                        <h4 class="product-name">Suede Chelsea Boots</h4>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                        <p class="product-price">$145.00</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Shoe 4 -->
+                <div class="product-card" data-category="shoes" data-id="p4">
+                    <div class="product-img-wrapper">
+                        <img src="https://assets-jiocdn.ajio.com/medias/sys_master/root/20240704/FQoH/6687384e1d763220faea0b7e/-473Wx593H-469118957-blue-MODEL.jpg"
+                            alt="Penny Loafers">
+                        <div class="quick-view">Quick View</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Shoes</div>
+                        <h4 class="product-name">Leather Penny Loafers</h4>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                        </div>
+                        <p class="product-price">$115.50</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Clothing 1 -->
+                <div class="product-card" data-category="clothing" data-id="p5">
+                    <div class="product-img-wrapper">
+                        <img src="https://assets-jiocdn.ajio.com/medias/sys_master/root/20231031/wNN2/65411706afa4cf41f56b4ed9/-473Wx593H-443013483-ltgrey-MODEL.jpg"
+                            alt="Slim Fit Suit">
+                        <div class="quick-view">Quick View</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Clothing</div>
+                        <h4 class="product-name">Tailored Slim Fit Suit</h4>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="product-price">$299.99</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Clothing 2 -->
+                <div class="product-card" data-category="clothing" data-id="p6">
+                    <div class="product-img-wrapper">
+                        <img src="https://assets-jiocdn.ajio.com/medias/sys_master/root1/20251031/0N8n/690400b6a470c5082f5a531f/-473Wx593H-443090022-white-MODEL.jpg"
+                            alt="Oxford Shirt">
+                        <div class="quick-view">Quick View</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Clothing</div>
+                        <h4 class="product-name">Casual Oxford Shirt</h4>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                        <p class="product-price">$45.00</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Clothing 3 -->
+                <div class="product-card" data-category="clothing" data-id="p7">
+                    <div class="product-img-wrapper">
+                        <img src="https://assets-jiocdn.ajio.com/medias/sys_master/root1/20251208/a3Py/6936bf638945db77cf167e3b/-473Wx593H-702594846-black-MODEL.jpg"
+                            alt="Bomber Jacket">
+                        <div class="quick-view">Quick View</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Clothing</div>
+                        <h4 class="product-name">Suede Bomber Jacket</h4>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="product-price">$149.50</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Clothing 4 -->
+                <div class="product-card" data-category="clothing" data-id="p8">
+                    <div class="product-img-wrapper">
+                        <img src="https://assets-jiocdn.ajio.com/medias/sys_master/root/20250604/3GaF/6840431655340d4b4f851f7e/-473Wx593H-443072081-olive-MODEL.jpg"
+                            alt="Chino Pants">
+                        <div class="quick-view">Quick View</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Clothing</div>
+                        <h4 class="product-name">Straight Fit Chinos</h4>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                        </div>
+                        <p class="product-price">$55.00</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Watches 1 -->
+                <div class="product-card" data-category="watches" data-id="p9">
+                    <div class="product-img-wrapper">
+                        <img src="https://assets-jiocdn.ajio.com/medias/sys_master/root/20240612/7RR6/666978c505ac7d77bb05846d/-473Wx593H-462743471-silver-MODEL.jpg"
+                            alt="Chronograph Watch">
+                        <div class="quick-view">Quick View</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Watches</div>
+                        <h4 class="product-name">Silver Chronograph</h4>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                        <p class="product-price">$195.00</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Watches 2 -->
+                <div class="product-card" data-category="watches" data-id="p10">
+                    <div class="product-img-wrapper">
+                        <img src="https://assets-jiocdn.ajio.com/medias/sys_master/root/20231128/noXV/6565ab49ddf7791519a1bcc9/-473Wx593H-469456976-black-MODEL.jpg"
+                            alt="Minimalist Watch">
+                        <div class="quick-view">Quick View</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Watches</div>
+                        <h4 class="product-name">Minimalist Black Dial</h4>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="product-price">$125.00</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Watches 3 -->
+                <div class="product-card" data-category="watches" data-id="p11">
+                    <div class="product-img-wrapper">
+                        <img src="https://assets-jiocdn.ajio.com/medias/sys_master/root/20250328/uX5j/67e6b72055340d4b4f986da5/-473Wx593H-701389372-silver-MODEL.jpg"
+                            alt="Diver Watch">
+                        <div class="quick-view">Quick View</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Watches</div>
+                        <h4 class="product-name">Pro Diver Watch</h4>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="product-price">$250.00</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Watches 4 -->
+                <div class="product-card" data-category="watches" data-id="p12">
+                    <div class="product-img-wrapper">
+                        <img src="https://assets-jiocdn.ajio.com/medias/sys_master/root/20250607/f2t8/6843479955340d4b4f8e0bdd/-473Wx593H-701688503-brown-MODEL.jpg"
+                            alt="Dress Watch">
+                        <div class="quick-view">Quick View</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Watches</div>
+                        <h4 class="product-name">Leather Strap Dress Watch</h4>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                        </div>
+                        <p class="product-price">$140.00</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="color:white;">EVER<span
+                            style="color:var(--color-accent)">STORE</span></a>
+                    <p style="margin-top: 1rem; color: #aaa;">Premium minimal menswear for the modern gentleman. Elevate
+                        your everyday.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="products.html">All Products</a></li>
+                        <li><a href="products.html">Shoes</a></li>
+                        <li><a href="products.html">Clothing</a></li>
+                        <li><a href="products.html">Watches</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Help</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 EVERSTORE. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

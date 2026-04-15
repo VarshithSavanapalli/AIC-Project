@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account | EVERSTORE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">EVER<span>STORE</span></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="cart.html">Cart</a>
+                <a href="account.html" class="active">Account</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-icons">
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Authentication Section -->
+    <div id="auth-section" class="account-container fade-in" style="display: none;">
+        <div class="account-box">
+            <div class="tabs-header">
+                <button class="tab-btn active" data-target="login-tab">Login</button>
+                <button class="tab-btn" data-target="register-tab">Register</button>
+            </div>
+            
+            <!-- Login Form -->
+            <div id="login-tab" class="tab-content active">
+                <form id="login-form">
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" required placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" required placeholder="Enter your password">
+                    </div>
+                    <div style="text-align: right; margin-bottom: 1.5rem;">
+                        <a href="#" style="font-size: 0.9rem; color: var(--color-gray);">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn full">Login</button>
+                </form>
+            </div>
+
+            <!-- Register Form -->
+            <div id="register-tab" class="tab-content">
+                <form id="register-form">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" id="reg-name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" id="reg-email" required placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" id="reg-pass" required placeholder="Create a password">
+                    </div>
+                    <div class="form-group">
+                        <label>Confirm Password</label>
+                        <input type="password" id="reg-confirm" required placeholder="Confirm password">
+                    </div>
+                    <button type="submit" class="btn full">Create Account</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dashboard Section -->
+    <div id="dashboard-section" class="account-container fade-in" style="display: none; max-width: 800px;">
+        <div class="dashboard-header">
+            <img src="https://ui-avatars.com/api/?name=User&background=c8a96e&color=fff&size=150" alt="Avatar">
+            <h2>Welcome back, <span id="user-name-display">User</span>!</h2>
+            <p style="color: var(--color-gray); margin-top: 0.5rem;">Manage your account details and orders here.</p>
+        </div>
+        
+        <div class="account-box">
+            <div class="tabs-header">
+                <button class="tab-btn active" data-target="orders-tab">My Orders</button>
+                <button class="tab-btn" data-target="saved-tab">Saved Items</button>
+                <button class="tab-btn" data-target="settings-tab">Settings</button>
+            </div>
+
+            <div id="orders-tab" class="tab-content active">
+                <p style="color: var(--color-gray); text-align: center; padding: 2rem;">You have no recent orders.</p>
+            </div>
+            <div id="saved-tab" class="tab-content">
+                <p style="color: var(--color-gray); text-align: center; padding: 2rem;">No items saved to wishlist.</p>
+            </div>
+            <div id="settings-tab" class="tab-content">
+                <form onsubmit="event.preventDefault(); alert('Settings updated');">
+                    <div class="form-group">
+                        <label>Update Email</label>
+                        <input type="email" placeholder="New Email">
+                    </div>
+                    <div class="form-group">
+                        <label>New Password</label>
+                        <input type="password" placeholder="New Password">
+                    </div>
+                    <button type="submit" class="btn">Save Changes</button>
+                    <button type="button" id="logout-btn" class="btn btn-outline" style="float: right;">Logout</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="color:white;">EVER<span style="color:var(--color-accent)">STORE</span></a>
+                    <p style="margin-top: 1rem; color: #aaa;">Premium minimal menswear for the modern gentleman. Elevate your everyday.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="products.html">All Products</a></li>
+                        <li><a href="products.html">Shoes</a></li>
+                        <li><a href="products.html">Clothing</a></li>
+                        <li><a href="products.html">Watches</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Help</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 EVERSTORE. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

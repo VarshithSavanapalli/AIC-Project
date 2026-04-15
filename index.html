@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVERSTORE | Premium Men's Fashion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">EVER<span>STORE</span></a>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="products.html">Products</a>
+                <a href="cart.html">Cart</a>
+                <a href="account.html">Account</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-icons">
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-content">
+            <h1>Elevate Your Style.</h1>
+            <p>Discover our minimal, modern menswear collection designed for the discerning gentleman.</p>
+            <a href="products.html" class="btn">Shop Now</a>
+        </div>
+    </header>
+
+    <!-- Featured Categories -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Shop by Category</h2>
+            <div class="categories-grid fade-in">
+                <div class="category-card" onclick="window.location.href='products.html'">
+                    <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&q=80&w=600"
+                        alt="Shoes">
+                    <div class="overlay">
+                        <h3>Shoes</h3>
+                    </div>
+                </div>
+                <div class="category-card" onclick="window.location.href='products.html'">
+                    <img src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?auto=format&fit=crop&q=80&w=600"
+                        alt="Clothing">
+                    <div class="overlay">
+                        <h3>Clothing</h3>
+                    </div>
+                </div>
+                <div class="category-card" onclick="window.location.href='products.html'">
+                    <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&q=80&w=600"
+                        alt="Watches">
+                    <div class="overlay">
+                        <h3>Watches</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Sellers -->
+    <section class="section" style="background-color: #ffffff;">
+        <div class="container">
+            <h2 class="section-title fade-in">Best Sellers</h2>
+            <div class="products-grid fade-in">
+                <!-- Product 1 -->
+                <div class="product-card" data-id="p1">
+                    <div class="product-img-wrapper">
+                        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRaZwXKfK0b_ObUL9o-VCWM1npf73_YRXkzVQcJqxrtBd0WR30yvT-nk4E_QivhdAr-wonhhW2Lr7eLS1wW0OO-CWfAFpC7D7jwQoEReN9__FgiXjuX3yHZ"
+                            alt="Leather Oxford">
+                        <div class="quick-view">Quick View</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Shoes</div>
+                        <h4 class="product-name">Classic Leather Oxford</h4>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="product-price">$129.99</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card" data-id="p5">
+                    <div class="product-img-wrapper">
+                        <img src="https://assets-jiocdn.ajio.com/medias/sys_master/root/20241202/1h7C/674dced40f47f80c87c6a8dd/-473Wx593H-700856933-blue-MODEL.jpg"
+                            alt="Slim Fit Suit">
+                        <div class="quick-view">Quick View</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Clothing</div>
+                        <h4 class="product-name">Tailored Slim Fit Suit</h4>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="product-price">$299.99</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card" data-id="p9">
+                    <div class="product-img-wrapper">
+                        <img src="https://assets-jiocdn.ajio.com/medias/sys_master/root/20240612/7RR6/666978c505ac7d77bb05846d/-473Wx593H-462743471-silver-MODEL.jpg"
+                            alt="Chronograph Watch">
+                        <div class="quick-view">Quick View</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Watches</div>
+                        <h4 class="product-name">Silver Chronograph</h4>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                        <p class="product-price">$195.00</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-card" data-id="p7">
+                    <div class="product-img-wrapper">
+                        <img src="https://assets-jiocdn.ajio.com/medias/sys_master/root/20240113/RhXJ/65a24b2a8cdf1e0df5b1cc8f/-473Wx593H-469558324-beige-MODEL.jpg"
+                            alt="Bomber Jacket">
+                        <div class="quick-view">Quick View</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Clothing</div>
+                        <h4 class="product-name">Suede Bomber Jacket</h4>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="product-price">$149.50</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section newsletter-section fade-in">
+        <div class="container">
+            <h2>Join the Everstore Club</h2>
+            <p style="color: var(--color-gray); margin-top: 0.5rem;">Subscribe to get special offers, free giveaways,
+                and once-in-a-lifetime deals.</p>
+            <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thanks for subscribing!');">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="color:white;">EVER<span
+                            style="color:var(--color-accent)">STORE</span></a>
+                    <p style="margin-top: 1rem; color: #aaa;">Premium minimal menswear for the modern gentleman. Elevate
+                        your everyday.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="products.html">All Products</a></li>
+                        <li><a href="products.html">Shoes</a></li>
+                        <li><a href="products.html">Clothing</a></li>
+                        <li><a href="products.html">Watches</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Help</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 EVERSTORE. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
